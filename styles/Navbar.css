@@ -1,0 +1,17 @@
+/* Navbar CSS */
+#NavbarContainer {
+    top: 0%;
+    left: 0%;
+    width: 100vw;
+    position: fixed;
+
+    gap: 20px;
+    font-size: 20px;
+}
+
+.NavbarButton:hover {
+    cursor: pointer;
+
+    color: var(--special-color);
+    transition: all ease-in-out 0.1s;
+}

@@ -1,0 +1,12 @@
+/* GitHubButton CSS */
+#GitHubButton {
+    right: 1%;
+    bottom: 0%;
+    direction: ltr;
+    position: fixed;
+    text-decoration: underline;
+}
+
+#GitHubButton:hover {
+    cursor: pointer
+}

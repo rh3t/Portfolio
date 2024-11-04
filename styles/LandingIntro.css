@@ -1,0 +1,12 @@
+/* LandingIntro CSS */
+#LandingIntro p {
+    font-size: 40px;
+    margin: 0px 0px 0px 30px;
+}
+
+#LandingIntro img {
+    padding: 15px;
+    border-radius: var(--default-radius);
+    border: 3px dashed var(--special-color-dark);
+    background-color: var(--special-color-transparent);
+}
