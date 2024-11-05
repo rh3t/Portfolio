@@ -4,8 +4,11 @@
     display: flex;
     padding: 15px 0px;
     justify-content: center;
-    border: 3px solid white;
+    box-shadow: 5px 5px 2px black;
     border-radius: var(--default-radius);
+    border: 3px solid rgb(255, 255, 255, 0.25);
+
+    transition: all ease-in-out 0.1s;
 }
 
 #Button p {
@@ -17,8 +20,6 @@
 #Button:hover {
     cursor: pointer;
 
-    filter: invert(1);
-    border-color: black;
-    background-color: black;
+    border-color: white;
     transition: all ease-in-out 0.1s;
 }

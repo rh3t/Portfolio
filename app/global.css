@@ -18,9 +18,10 @@ html {
 }
 
 .default-border {
-    border: 3px dashed white;
+    box-shadow: 10px 10px 5px black;
     border-radius: var(--default-radius);
     background-color: var(--background-color);
+    border: 3px dashed rgb(255, 255, 255, 0.25);
 }
 
 .special-text {
@@ -28,11 +29,24 @@ html {
     color: var(--special-color);
 }
 
+.fade-in {
+    animation: fade-in linear 0.25s;
+}
+
 :root {
-    --default-radius: 10px;
+    --default-radius: 15px;
     --background-color: #171717;
 
     --special-color: #c41339;
     --special-color-dark: #5f091b;
     --special-color-transparent: rgb(95, 5, 27, 0.10);
+}
+
+@keyframes fade-in {
+    0% {
+        opacity: 0%;
+    }
+    100% {
+        opacity: 100%;
+    }
 }

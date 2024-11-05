@@ -15,7 +15,7 @@ export const metadata: Metadata = {
 export default function Index(){
     return(
 
-        <div className = 'default-border' style = {{padding: '50px'}}>
+        <div className = 'default-border fade-in' style = {{padding: '60px'}}>
 
             <LandingIntro></LandingIntro>
 
@@ -23,7 +23,7 @@ export default function Index(){
                 <IconTray imgSize = {30} imgGap = {45}></IconTray>
             </div>
 
-            <div style = {{marginTop: 30, gap: 25}} className = 'flexbox-centered'>
+            <div style = {{marginTop: 40, gap: 25}} className = 'flexbox-centered'>
 
                 <Button iconSrc = '/images/github.svg' func = {sendToGitHub}>
                     GitHub
