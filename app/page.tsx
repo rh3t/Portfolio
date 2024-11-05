@@ -25,11 +25,11 @@ export default function Index(){
 
             <div style = {{marginTop: 40, gap: 25}} className = 'flexbox-centered'>
 
-                <Button iconSrc = '/images/github.svg' func = {sendToGitHub}>
+                <Button hasIcon = {true} iconSrc = '/images/github.svg' func = {sendToGitHub}>
                     GitHub
                 </Button>
 
-                <Button iconSrc = '/images/twitter.svg' func = {sendToTwitter}>
+                <Button hasIcon = {true} iconSrc = '/images/twitter.svg' func = {sendToTwitter}>
                     Twitter
                 </Button>
 
@@ -38,11 +38,11 @@ export default function Index(){
 
             <div style = {{marginTop: 25, gap: 25}} className = 'flexbox-centered'>
 
-                <Button iconSrc = '/images/monkeytype.svg' func = {sendToMonkeytype}>
+                <Button hasIcon = {true} iconSrc = '/images/monkeytype.svg' func = {sendToMonkeytype}>
                     Monkeytype
                 </Button>
 
-                <Button iconSrc = '/images/discord.svg' func = {sendToDiscord}>
+                <Button hasIcon = {true} iconSrc = '/images/discord.svg' func = {sendToDiscord}>
                     Discord
                 </Button>
 
