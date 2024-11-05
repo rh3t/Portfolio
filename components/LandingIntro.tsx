@@ -1,5 +1,5 @@
 // Import
-import '@/styles/LandingIntro.css';
+import './styles/LandingIntro.css';
 
 // Component
 export default function LandingIntro(){

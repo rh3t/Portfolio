@@ -1,5 +1,5 @@
 // Imports
-import '@/styles/Navbar.css';
+import './styles/Navbar.css';
 
 // Props
 interface NavbarButtonProps {

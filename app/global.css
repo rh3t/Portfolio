@@ -6,6 +6,7 @@ html {
 
     color: white;
     font-weight: bold;
+    user-select: none;
     font-family: 'Roboto Mono', sans-serif;
     background-color: var(--background-color);
 }

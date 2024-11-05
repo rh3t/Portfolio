@@ -1,5 +1,5 @@
 // Import
-import '@/styles/VersionLabel.css';
+import './styles/VersionLabel.css';
 import data from '@/public/meta.json';
 
 // Component

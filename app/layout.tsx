@@ -2,8 +2,8 @@
 import './global.css';
 import Navbar from '@/components/Navbar';
 import SolarDecal from '@/components/SolarDecal';
+import RepoButton from '@/components/RepoButton';
 import VersionLabel from '@/components/VersionLabel';
-import GitHubButton from '@/components/GitHubButton';
 
 // Component
 export default function RootLayout({children}: {children: React.ReactNode}){
@@ -14,8 +14,8 @@ export default function RootLayout({children}: {children: React.ReactNode}){
 
                 {children}
                 <Navbar></Navbar>
+                <RepoButton></RepoButton>
                 <VersionLabel></VersionLabel>
-                <GitHubButton></GitHubButton>
                 <SolarDecal size = {2000}></SolarDecal>
 
             </body>

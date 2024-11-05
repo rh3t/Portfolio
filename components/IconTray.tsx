@@ -1,5 +1,5 @@
 // Import
-import '@/styles/IconTray.css';
+import './styles/IconTray.css';
 
 // Props
 interface IconTrayProps {

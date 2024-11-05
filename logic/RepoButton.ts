@@ -1,4 +1,4 @@
-// GitHub Button Logic
+// Repo Button
 "use client";
 
 // Function

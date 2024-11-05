@@ -1,7 +1,5 @@
-"use client"
-
 // Import
-import '@/styles/Button.css';
+import './styles/Button.css';
 
 // Props
 interface ButtonProps {

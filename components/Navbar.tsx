@@ -1,5 +1,5 @@
 // Import
-import '@/styles/Navbar.css';
+import './styles/Navbar.css';
 import NavbarButton from './NavbarButton';
 
 // Component

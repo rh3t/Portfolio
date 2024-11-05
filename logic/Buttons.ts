@@ -14,5 +14,5 @@ export function sendToMonkeytype(){
 }
 
 export function sendToDiscord(){
-    window.open('https://discord.com/users/996964730252042320')
+    window.open('discord:discord.com/users/996964730252042320')
 }

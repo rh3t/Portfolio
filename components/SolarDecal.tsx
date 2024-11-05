@@ -1,5 +1,5 @@
 // Import
-import '@/styles/SolarDecal.css';
+import './styles/SolarDecal.css';
 
 // Component
 export default function SolarDecal({size}: {size: number}){
