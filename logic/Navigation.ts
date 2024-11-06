@@ -38,9 +38,19 @@ function pressedArchive(){
 
 }
 
+function pressedWork(){
+
+    var path = '/work';
+    if (location.pathname != path){
+        location.href = path;
+    }
+
+}
+
 export {
     pressedHome,
     pressedAbout,
     pressedBlog,
-    pressedArchive
+    pressedArchive,
+    pressedWork
 }

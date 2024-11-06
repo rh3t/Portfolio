@@ -30,7 +30,7 @@ html {
 }
 
 .fade-in {
-    animation: fade-in linear 0.25s;
+    animation: fade-in linear 0.5s;
 }
 
 :root {
