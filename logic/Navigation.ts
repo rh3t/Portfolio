@@ -31,10 +31,7 @@ function pressedProjects(){
 
 function pressedArchive(){
 
-    var path = '/archive';
-    if (location.pathname != path){
-        location.href = path;
-    }
+    window.open('https://archive.rh3t.dev')
 
 }
 
