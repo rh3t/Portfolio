@@ -1,13 +1,13 @@
 // Import
 import './styles/RepoButton.css';
-import { sendToRepo } from '@/logic/RepoButton';
+import { sendToRepo } from '@/logic/Buttons';
 
 // Component
 export default function RepoButton(){
     return (
 
         <p id = 'RepoButton' onClick = {sendToRepo}>
-            Visit Repository
+            Visit on GitHub
         </p>
 
     )

@@ -4,9 +4,10 @@
     bottom: 0%;
     direction: ltr;
     position: fixed;
-    text-decoration: underline;
 }
 
 #RepoButton:hover {
-    cursor: pointer
+    cursor: pointer;
+    color: var(--special-color);
+    transition: all ease-in-out 0.1s;
 }

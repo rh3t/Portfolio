@@ -1,7 +1,7 @@
 // Import
 import './styles/Navbar.css';
 import NavbarButton from './NavbarButton';
-import { pressedAbout, pressedArchive, pressedBlog, pressedHome, pressedWork } from '@/logic/Navigation';
+import { pressedAbout, pressedArchive, pressedHome, pressedProjects } from '@/logic/Navigation';
 
 // Component
 export default function Navbar(){
@@ -11,8 +11,7 @@ export default function Navbar(){
             ~
             <NavbarButton func = {pressedHome}>Home</NavbarButton>
             <NavbarButton func = {pressedAbout}>About</NavbarButton>
-            <NavbarButton func = {pressedBlog}>Blog</NavbarButton>
-            <NavbarButton func = {pressedWork}>Work</NavbarButton>
+            <NavbarButton func = {pressedProjects}>Projects</NavbarButton>
             <NavbarButton func = {pressedArchive}>Archive</NavbarButton>
             ~
         </div>

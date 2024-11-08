@@ -21,10 +21,20 @@ function sendToHome(){
     location.href = '/'
 }
 
+function sendToRepo(){
+    window.open('https://github.com/rh3t/Portfolio')
+}
+
+function sendToEmail(){
+    window.open('mailto:keegan@rh3t.dev');
+}
+
 export {
     sendToGitHub,
     sendToTwitter,
     sendToMonkeytype,
     sendToDiscord,
-    sendToHome
+    sendToHome,
+    sendToRepo,
+    sendToEmail
 }

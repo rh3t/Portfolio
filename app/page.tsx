@@ -1,7 +1,6 @@
 // Import
 import type { Metadata } from 'next';
 import Button from '@/components/Button';
-import IconTray from '@/components/IconTray';
 import LandingIntro from '@/components/LandingIntro';
 
 import { sendToDiscord, sendToGitHub, sendToMonkeytype, sendToTwitter } from '@/logic/Buttons';
@@ -18,10 +17,6 @@ export default function Index(){
         <div className = 'default-border fade-in' style = {{padding: '60px'}}>
 
             <LandingIntro></LandingIntro>
-
-            <div style = {{marginTop: 30}}>
-                <IconTray imgSize = {30} imgGap = {45}></IconTray>
-            </div>
 
             <div style = {{marginTop: 40, gap: 25}} className = 'flexbox-centered'>
 

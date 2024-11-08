@@ -10,3 +10,10 @@
     border: 3px dashed var(--special-color-dark);
     background-color: var(--special-color-transparent);
 }
+
+#IntroComment {
+    opacity: 50%;
+    font-size: 13px;
+    text-align: center;
+    font-style: italic;
+}

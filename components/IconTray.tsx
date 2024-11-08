@@ -13,11 +13,12 @@ export default function IconTray({imgGap, imgSize}: IconTrayProps){
 
         <div id = 'IconTray' className = 'flexbox-centered' style = {{gap: imgGap}}>
             <p>~</p>
-            <img src = '/images/html.svg' width = {imgSize}></img>
-            <img src = '/images/css.svg' width = {imgSize}></img>
-            <img src = '/images/typescript.svg' width = {imgSize}></img>
-            <img src = '/images/next-js.svg' width = {imgSize}></img>
-            <img src = '/images/react.svg' width = {imgSize}></img>
+            <img src = '/images/icons/html.svg' width = {imgSize}></img>
+            <img src = '/images/icons/css.svg' width = {imgSize}></img>
+            <img src = '/images/icons/typescript.svg' width = {imgSize}></img>
+            <img src = '/images/icons/next-js.svg' width = {imgSize}></img>
+            <img src = '/images/icons/react.svg' width = {imgSize}></img>
+            <img src = '/images/icons/nodejs.svg' width = {imgSize}></img>
             <p>~</p>
         </div>
 

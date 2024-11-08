@@ -11,6 +11,20 @@ html {
     background-color: var(--background-color);
 }
 
+p {
+    text-align: center;
+}
+
+:root {
+    --default-radius: 13px;
+    --background-color: #171717;
+
+    --special-color: #c41339;
+    --special-color-dark: #5f091b;
+    --special-color-transparent: rgb(95, 5, 27, 0.10);
+}
+
+/* Classes */
 .flexbox-centered {
     display: flex;
     align-items: center;
@@ -25,7 +39,7 @@ html {
 }
 
 .special-text {
-    font-weight: bold;
+    font-style: italic;
     color: var(--special-color);
 }
 
@@ -33,15 +47,17 @@ html {
     animation: fade-in linear 0.5s;
 }
 
-:root {
-    --default-radius: 15px;
-    --background-color: #171717;
-
-    --special-color: #c41339;
-    --special-color-dark: #5f091b;
-    --special-color-transparent: rgb(95, 5, 27, 0.10);
+/* Specific */
+#aboutTitle {
+    margin: 0;
+    font-size: 35px;
 }
 
+#aboutDescription {
+    width: 600px;
+}
+
+/* Keyframes */
 @keyframes fade-in {
     0% {
         opacity: 0%;

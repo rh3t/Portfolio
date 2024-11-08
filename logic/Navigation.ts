@@ -20,9 +20,9 @@ function pressedAbout(){
 
 }
 
-function pressedBlog(){
+function pressedProjects(){
 
-    var path = '/blog';
+    var path = '/projects';
     if (location.pathname != path){
         location.href = path;
     }
@@ -38,19 +38,9 @@ function pressedArchive(){
 
 }
 
-function pressedWork(){
-
-    var path = '/work';
-    if (location.pathname != path){
-        location.href = path;
-    }
-
-}
-
 export {
     pressedHome,
     pressedAbout,
-    pressedBlog,
     pressedArchive,
-    pressedWork
+    pressedProjects
 }
