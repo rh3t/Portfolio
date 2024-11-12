@@ -14,11 +14,11 @@ export default function ProjectsPage(){
 
         <div className = 'fade-in'>
 
-            <p style = {{textAlign: 'center', fontSize: 40, marginTop: 0}}>
+            <p style = {{textAlign: 'center', fontSize: 40, margin: '0px 0px 20px 0px'}}>
                 Featured Projects
             </p>
 
-            <div style = {{display: 'flex', gap: '25px', justifyContent: 'center'}}>
+            <div style = {{display: 'flex', gap: '25px', justifyContent: 'center', paddingBottom: '25px'}}>
 
                 <Repository title = 'WinScripts' color = '#007edf' func = {toWinScripts}>
                     WinScripts is a collection of batch files that run a variety of scripts that help assist you install various applications, improve performance, and more.
@@ -30,7 +30,7 @@ export default function ProjectsPage(){
 
             </div>
 
-            <div style = {{display: 'flex', gap: '25px', justifyContent: 'center', marginTop: '25px'}}>
+            <div style = {{display: 'flex', gap: '25px', justifyContent: 'center', paddingBottom: '25px'}}>
 
                 <Repository title = 'Lynknest' color = '#4bbc60' func = {toLynkNest}>
                     Lynknest is a bulk link sharing tool that can be used for sharing a series of links with the world. It features importing and exporting links as files, so you can store them whenever you need them.
@@ -41,6 +41,10 @@ export default function ProjectsPage(){
                 </Repository>
 
             </div>
+
+            <p style = {{textAlign: 'center', opacity: '25%', margin: 0}}>
+                Looking for something else? Older projects are located in the Archive.
+            </p>
 
         </div>
 

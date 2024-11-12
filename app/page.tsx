@@ -17,7 +17,7 @@ export default function Index(){
 
             <LandingIntro></LandingIntro>
 
-            <div style = {{marginTop: 40, gap: 25}} className = 'flexbox-centered'>
+            <div style = {{marginTop: 25, gap: 25}} className = 'flexbox-centered'>
 
                 <Button hasIcon = {true} iconSrc = '/images/github.svg' func = {toGitHub}>
                     GitHub
