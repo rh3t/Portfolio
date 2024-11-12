@@ -2,8 +2,7 @@
 import type { Metadata } from 'next';
 import Button from '@/components/Button';
 import LandingIntro from '@/components/LandingIntro';
-
-import { sendToDiscord, sendToGitHub, sendToMonkeytype, sendToTwitter } from '@/logic/Buttons';
+import { toDiscord, toGitHub, toMonkeyType, toTwitter } from '@/logic/ButtonLogic';
 
 // Meta
 export const metadata: Metadata = {
@@ -20,11 +19,11 @@ export default function Index(){
 
             <div style = {{marginTop: 40, gap: 25}} className = 'flexbox-centered'>
 
-                <Button hasIcon = {true} iconSrc = '/images/github.svg' func = {sendToGitHub}>
+                <Button hasIcon = {true} iconSrc = '/images/github.svg' func = {toGitHub}>
                     GitHub
                 </Button>
 
-                <Button hasIcon = {true} iconSrc = '/images/twitter.svg' func = {sendToTwitter}>
+                <Button hasIcon = {true} iconSrc = '/images/twitter.svg' func = {toTwitter}>
                     Twitter
                 </Button>
 
@@ -33,11 +32,11 @@ export default function Index(){
 
             <div style = {{marginTop: 25, gap: 25}} className = 'flexbox-centered'>
 
-                <Button hasIcon = {true} iconSrc = '/images/monkeytype.svg' func = {sendToMonkeytype}>
+                <Button hasIcon = {true} iconSrc = '/images/monkeytype.svg' func = {toMonkeyType}>
                     Monkeytype
                 </Button>
 
-                <Button hasIcon = {true} iconSrc = '/images/discord.svg' func = {sendToDiscord}>
+                <Button hasIcon = {true} iconSrc = '/images/discord.svg' func = {toDiscord}>
                     Discord
                 </Button>
 

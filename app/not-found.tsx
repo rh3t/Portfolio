@@ -1,7 +1,7 @@
 // Import
 import type { Metadata } from 'next';
 import Button from '@/components/Button';
-import { sendToHome } from '@/logic/Buttons';
+import { toHomepage } from '@/logic/ButtonLogic';
 
 // Meta
 export const metadata: Metadata = {
@@ -21,7 +21,7 @@ export default function NotFound(){
             }}>
                 404
             </p>
-            <Button func = {sendToHome}>Go Home</Button>
+            <Button func = {toHomepage}>Go Home</Button>
 
         </div>
 

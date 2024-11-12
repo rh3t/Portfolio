@@ -1,0 +1,23 @@
+/* Repository CSS */
+#RepositoryContainer {
+    width: 25%;
+    padding: 30px;
+}
+
+#titleContainer {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    justify-content: space-between;
+}
+
+#titleContainer p {
+    margin: 0px;
+    font-size: 25px;
+}
+
+#RepositoryContainer:hover {
+    cursor: pointer;
+    filter: brightness(125%);
+    transition: all ease-in-out 0.1s;
+}

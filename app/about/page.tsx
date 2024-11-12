@@ -1,7 +1,8 @@
 // Import
 import type { Metadata } from 'next';
 import Button from '@/components/Button';
-import { sendToEmail } from '@/logic/Buttons';
+import { toEmail } from '@/logic/ButtonLogic';
+import AboutBanner from '@/components/AboutBanner';
 
 // Meta
 export const metadata: Metadata = {
@@ -12,15 +13,12 @@ export const metadata: Metadata = {
 export default function AboutPage(){
     return(
 
-        <div className = 'default-border fade-in flexbox-centered' style = {{padding: '30px 60px', flexDirection: 'column'}}>
-            <img src = '/images/banner.png' width = {450}></img>
-            <p id = 'aboutTitle'>
-                Nice to meet <span className = 'special-text'>you</span>!
+        <div className = 'flexbox-centered default-border fade-in' style = {{padding: '50px', flexDirection: 'column'}}>
+            <AboutBanner></AboutBanner>
+            <p id = 'aboutDescription' style = {{paddingBottom: 15}}>
+                I'm Keegan. I'm currently located in the United States studying software development, which while initially a hobby, has now taken over my life for about 6 years. I've also put time into e-commerce and online social media marketing. I also have a WPM of 115, which is cool. <br></br><br></br> Technically, my experience mainly includes web languages such as HTML, JavaScript (or TypeScript), and Python utilizing tools such as React with Next.js, Node, and Supabase. Despite that though, my skillset expands by the day.
             </p>
-            <p id = 'aboutDescription' style = {{paddingBottom: 10}}>
-                I'm Keegan. This is me and my cat. <br></br><br></br> I've spent my life around complex numbers and words. I've dedicated time to learning software development, e-commerce systems, online marketing platforms, and social media interaction and advertisement for about 6 years. I've always put in effort to expand my knowledge and explore new ideas. <br></br><br></br> I mainly have experience in languages such as HTML, JavaScript, TypeScript, and Python, and libraries such as React, Next.js, and Supabase, including data storage and server software such as CloudFlare and Firebase.
-            </p>
-            <Button hasIcon = {true} iconSrc = '/images/mail.svg' func = {sendToEmail}>Contact Me</Button>
+            <Button hasIcon = {true} iconSrc = '/images/mail.svg' func = {toEmail}>Contact Me</Button>
         </div>
 
     )

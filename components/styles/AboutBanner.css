@@ -1,0 +1,9 @@
+/* AboutBanner CSS */
+#AboutBanner {
+    text-align: center;
+}
+
+#AboutBanner p {
+    font-size: 40px;
+    margin: 5px 0px;
+}
