@@ -1,7 +1,7 @@
 // Import
 import type { Metadata } from 'next';
 import Repository from '@/components/Repository';
-import { toLynkNest, toMocha, toWinScripts } from '@/logic/ButtonLogic';
+import { toCCArchive, toLynkNest, toMocha, toWinScripts } from '@/logic/ButtonLogic';
 
 // Meta
 export const metadata: Metadata = {
@@ -36,7 +36,7 @@ export default function ProjectsPage(){
                     Lynknest is a bulk link sharing tool that can be used for sharing a series of links with the world. It features importing and exporting links as files, so you can store them whenever you need them.
                 </Repository>
 
-                <Repository title = 'CottenCandy_1 Archive' color = '#bd5bdf' func = {toLynkNest}>
+                <Repository title = 'CottenCandy_1 Archive' color = '#bd5bdf' func = {toCCArchive}>
                     This repository holds a variety of projects by CottenCandy_1 on Scratch. This is more of a gag and a running joke, then an actual project.
                 </Repository>
 
