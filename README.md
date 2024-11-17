@@ -1,4 +1,3 @@
 # Portfolio 📁
-> Visit Here: https://rh3t.dev
-
-This is my site which mainly serves as my portfolio, but also as a directory to a bunch of various things i'm included in. Built using React and Next.js as backend, and my tears as frontend.
+This project serves as my portfolio, providing resources and services that I use or i'm a part of. This includes my socials, projects, and some other misc stuff. Built using React and Next.js.
+> [**Visit Here**](https://rh3t.dev)
