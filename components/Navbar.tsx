@@ -12,9 +12,10 @@ export default function Navbar(){
             <NavbarButton func = {pressedHome}>Home</NavbarButton>
             <NavbarButton func = {pressedAbout}>About</NavbarButton>
             <NavbarButton func = {pressedProjects}>Projects</NavbarButton>
+            <NavbarButton func = {pressedArchive}>Archive</NavbarButton>
 
             {/*
-                <NavbarButton func = {pressedArchive}>Archive</NavbarButton>
+                <NavbarButton func = {pressedBlog}>Blog</NavbarButton>
             */}
             
             ~

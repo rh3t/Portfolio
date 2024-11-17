@@ -13,7 +13,7 @@ export const metadata: Metadata = {
 export default function Index(){
     return(
 
-        <div className = 'default-border fade-in' style = {{padding: '60px'}}>
+        <div className = 'default-border' style = {{padding: '60px'}}>
 
             <LandingIntro></LandingIntro>
 

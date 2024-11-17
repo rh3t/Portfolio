@@ -4,9 +4,11 @@
     display: flex;
     padding: 15px 0px;
     justify-content: center;
-    box-shadow: 5px 5px 10px black;
+    box-shadow: 6px 6px 12px black;
     border-radius: var(--default-radius);
     border: 3px solid rgb(255, 255, 255, 0.25);
+
+    transition: all ease-in-out 0.1s;
 }
 
 #Button p {

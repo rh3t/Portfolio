@@ -1,6 +1,6 @@
 // Import
+import data from '@/meta.json';
 import './styles/VersionLabel.css';
-import data from '@/public/meta.json';
 
 // Component
 export default function VersionLabel(){

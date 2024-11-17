@@ -17,7 +17,7 @@ export default function NotFound(){
             <p style = {{
                 margin: '0px 0px 15px 0px', 
                 fontSize: 50, 
-                textAlign: 'center' 
+                textAlign: 'center'
             }}>
                 404
             </p>

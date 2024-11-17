@@ -12,7 +12,9 @@ export default function RootLayout({children}: {children: React.ReactNode}){
         <html className = 'flexbox-centered'>
             <body>
 
-                {children}
+                <div className = 'fade-in-animation'>
+                    {children}
+                </div>
                 
                 <Navbar></Navbar>
                 <RepoButton></RepoButton>

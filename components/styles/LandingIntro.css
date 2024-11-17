@@ -7,13 +7,13 @@
 #LandingIntro img {
     padding: 15px;
     border-radius: var(--default-radius);
-    border: 3px dashed var(--special-color-dark);
+    border: 3px solid var(--special-color-dark);
     background-color: var(--special-color-transparent);
 }
 
 #IntroComment {
     opacity: 50%;
-    font-size: 13px;
+    font-size: 14px;
     text-align: center;
     font-style: italic;
 }
