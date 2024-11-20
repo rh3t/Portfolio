@@ -2,7 +2,7 @@
 import './styles/SolarDecal.css';
 
 // Component
-export default function SolarDecal({size}: {size: number}){
+const SolarDecal = ({size}: {size: number}) => {
     return(
 
         <div id = 'SolarDecalContainer'>
@@ -11,3 +11,6 @@ export default function SolarDecal({size}: {size: number}){
 
     )
 }
+
+// Export
+export default SolarDecal;

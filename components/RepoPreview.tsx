@@ -1,6 +1,6 @@
 // Import
 "use client";
-import './styles/Repository.css';
+import './styles/RepoPreview.css';
 
 // Props
 interface RepoPreviewProps {
@@ -11,7 +11,7 @@ interface RepoPreviewProps {
 }
 
 // Component
-export default function RepoPreview({url, title, color, children}: RepoPreviewProps){
+const RepoPreview = ({url, title, color, children}: RepoPreviewProps) => {
 
     const handleRedirect = (url: string) => {
         if (typeof window !== 'undefined'){
@@ -34,3 +34,6 @@ export default function RepoPreview({url, title, color, children}: RepoPreviewPr
 
     )
 }
+
+// Export
+export default RepoPreview;

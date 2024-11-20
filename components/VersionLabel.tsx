@@ -3,7 +3,7 @@ import data from '@/meta.json';
 import './styles/VersionLabel.css';
 
 // Component
-export default function VersionLabel(){
+const VersionLabel = () => {
     return (
 
         <p id = 'VersionLabel'>
@@ -12,3 +12,6 @@ export default function VersionLabel(){
 
     )
 }
+
+// Export
+export default VersionLabel;

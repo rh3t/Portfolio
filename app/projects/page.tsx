@@ -1,6 +1,6 @@
 // Import
 import type { Metadata } from 'next';
-import Repository from '@/components/RepoPreview';
+import RepoPreview from '@/components/RepoPreview';
 
 // Meta
 export const metadata: Metadata = {
@@ -19,25 +19,25 @@ const Projects = () => {
 
             <div style = {{display: 'flex', gap: '25px', justifyContent: 'center', paddingBottom: '25px'}}>
 
-                <Repository title = 'WinScripts' color = '#007edf' url = 'https://github.com/rh3t/WinScripts'>
+                <RepoPreview title = 'WinScripts' color = '#007edf' url = 'https://github.com/rh3t/WinScripts'>
                     WinScripts is a collection of batch files that run a variety of scripts that help assist you install various applications, improve performance, and more.
-                </Repository>
+                </RepoPreview>
 
-                <Repository title = 'Mocha' color = '#ffbb5f' url = 'https://github.com/rh3t/Mocha'>
+                <RepoPreview title = 'Mocha' color = '#ffbb5f' url = 'https://github.com/rh3t/Mocha'>
                     Mocha is a text based operating system built with the Python programming language. Mocha was created because i felt like it, even though it serves almost no utilitarian use.
-                </Repository>
+                </RepoPreview>
 
             </div>
 
             <div style = {{display: 'flex', gap: '25px', justifyContent: 'center', paddingBottom: '25px'}}>
 
-                <Repository title = 'Lynknest' color = '#4bbc60' url = 'https://github.com/rh3t/LynkNest'>
+                <RepoPreview title = 'Lynknest' color = '#4bbc60' url = 'https://github.com/rh3t/LynkNest'>
                     Lynknest is a bulk link sharing tool that can be used for sharing a series of links with the world. It features importing and exporting links as files, so you can store them whenever you need them.
-                </Repository>
+                </RepoPreview>
 
-                <Repository title = 'CottenCandy_1 Archive' color = '#bd5bdf' url = 'https://github.com/rh3t/CottenCandy-Archive'>
+                <RepoPreview title = 'CottenCandy_1 Archive' color = '#bd5bdf' url = 'https://github.com/rh3t/CottenCandy-Archive'>
                     This repository holds a variety of projects by CottenCandy_1 on Scratch. This is more of a gag and a running joke, then an actual project.
-                </Repository>
+                </RepoPreview>
 
             </div>
 
