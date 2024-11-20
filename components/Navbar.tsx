@@ -26,7 +26,7 @@ interface NavbarButtonProps {
 const NavbarButton = ({page, children}: NavbarButtonProps) => {
 
     const handleClick = () => {
-        location.pathname = `/${page}`
+        location.pathname = page;
     }
 
     return(
