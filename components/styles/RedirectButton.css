@@ -1,5 +1,5 @@
-/* Button CSS */
-#Button {
+/* CSS */
+#RedirectButton {
     width: 225px;
     display: flex;
     padding: 15px 0px;
@@ -11,13 +11,13 @@
     transition: all ease-in-out 0.1s;
 }
 
-#Button p {
+#RedirectButton p {
     margin: 0;
     font-size: 16px;
     padding-left: 15px;
 }
 
-#Button:hover {
+#RedirectButton:hover {
     cursor: pointer;
 
     border-color: white;

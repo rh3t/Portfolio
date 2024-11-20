@@ -1,25 +1,42 @@
 // Import
+"use client";
 import './styles/Navbar.css';
-import NavbarButton from './NavbarButton';
-import { pressedAbout, pressedArchive, pressedHome, pressedProjects } from '@/logic/Navigation';
 
 // Component
-export default function Navbar(){
+const Navbar = () => {
     return(
 
         <div id = 'NavbarContainer' className = 'flexbox-centered'>
             ~
-            <NavbarButton func = {pressedHome}>Home</NavbarButton>
-            <NavbarButton func = {pressedAbout}>About</NavbarButton>
-            <NavbarButton func = {pressedProjects}>Projects</NavbarButton>
-            <NavbarButton func = {pressedArchive}>Archive</NavbarButton>
-
-            {/*
-                <NavbarButton func = {pressedBlog}>Blog</NavbarButton>
-            */}
-            
+            <NavbarButton page = '/'>Home</NavbarButton>
+            <NavbarButton page = '/about'>About</NavbarButton>
+            <NavbarButton page = '/projects'>Projects</NavbarButton>
             ~
         </div>
 
     )
 }
+
+// Navbar Button
+interface NavbarButtonProps {
+    page: string,
+    children: React.ReactNode
+}
+
+const NavbarButton = ({page, children}: NavbarButtonProps) => {
+
+    const handleClick = () => {
+        location.pathname = `/${page}`
+    }
+
+    return(
+
+        <p className = 'NavbarButton' onClick = {handleClick}>
+            {children}
+        </p>
+
+    )
+}
+
+// Export
+export default Navbar;

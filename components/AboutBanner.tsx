@@ -2,7 +2,7 @@
 import './styles/AboutBanner.css';
 
 // Component
-export default function AboutBanner(){
+const AboutBanner = () => {
     return(
 
         <div id = 'AboutBanner'>
@@ -14,3 +14,6 @@ export default function AboutBanner(){
 
     )
 }
+
+// Export
+export default AboutBanner;

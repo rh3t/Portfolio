@@ -1,5 +1,5 @@
-/* Repository CSS */
-#RepositoryContainer {
+/* CSS */
+#RepoPreviewContainer {
     width: 25%;
     padding: 30px;
 }
@@ -16,7 +16,7 @@
     font-size: 25px;
 }
 
-#RepositoryContainer:hover {
+#RepoPreviewContainer:hover {
     cursor: pointer;
     filter: brightness(125%);
     transition: all ease-in-out 0.1s;

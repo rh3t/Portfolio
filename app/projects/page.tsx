@@ -1,7 +1,6 @@
 // Import
 import type { Metadata } from 'next';
-import Repository from '@/components/Repository';
-import { toCCArchive, toLynkNest, toMocha, toWinScripts } from '@/logic/ButtonLogic';
+import Repository from '@/components/RepoPreview';
 
 // Meta
 export const metadata: Metadata = {
@@ -9,7 +8,7 @@ export const metadata: Metadata = {
 }
 
 // Component
-export default function ProjectsPage(){
+const Projects = () => {
     return(
 
         <div className = 'fade-in'>
@@ -20,11 +19,11 @@ export default function ProjectsPage(){
 
             <div style = {{display: 'flex', gap: '25px', justifyContent: 'center', paddingBottom: '25px'}}>
 
-                <Repository title = 'WinScripts' color = '#007edf' func = {toWinScripts}>
+                <Repository title = 'WinScripts' color = '#007edf' url = 'https://github.com/rh3t/WinScripts'>
                     WinScripts is a collection of batch files that run a variety of scripts that help assist you install various applications, improve performance, and more.
                 </Repository>
 
-                <Repository title = 'Mocha' color = '#ffbb5f' func = {toMocha}>
+                <Repository title = 'Mocha' color = '#ffbb5f' url = 'https://github.com/rh3t/Mocha'>
                     Mocha is a text based operating system built with the Python programming language. Mocha was created because i felt like it, even though it serves almost no utilitarian use.
                 </Repository>
 
@@ -32,11 +31,11 @@ export default function ProjectsPage(){
 
             <div style = {{display: 'flex', gap: '25px', justifyContent: 'center', paddingBottom: '25px'}}>
 
-                <Repository title = 'Lynknest' color = '#4bbc60' func = {toLynkNest}>
+                <Repository title = 'Lynknest' color = '#4bbc60' url = 'https://github.com/rh3t/LynkNest'>
                     Lynknest is a bulk link sharing tool that can be used for sharing a series of links with the world. It features importing and exporting links as files, so you can store them whenever you need them.
                 </Repository>
 
-                <Repository title = 'CottenCandy_1 Archive' color = '#bd5bdf' func = {toCCArchive}>
+                <Repository title = 'CottenCandy_1 Archive' color = '#bd5bdf' url = 'https://github.com/rh3t/CottenCandy-Archive'>
                     This repository holds a variety of projects by CottenCandy_1 on Scratch. This is more of a gag and a running joke, then an actual project.
                 </Repository>
 
@@ -50,3 +49,6 @@ export default function ProjectsPage(){
 
     )
 }
+
+// Export
+export default Projects;

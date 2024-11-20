@@ -1,8 +1,7 @@
 // Import
 import type { Metadata } from 'next';
-import Button from '@/components/Button';
 import LandingIntro from '@/components/LandingIntro';
-import { toDiscord, toGitHub, toMonkeyType, toTwitter } from '@/logic/ButtonLogic';
+import RedirectButton from '@/components/RedirectButton';
 
 // Meta
 export const metadata: Metadata = {
@@ -10,7 +9,7 @@ export const metadata: Metadata = {
 }
 
 // Component
-export default function Index(){
+const Index = () => {
     return(
 
         <div className = 'default-border' style = {{padding: '60px'}}>
@@ -19,26 +18,15 @@ export default function Index(){
 
             <div style = {{marginTop: 25, gap: 25}} className = 'flexbox-centered'>
 
-                <Button hasIcon = {true} iconSrc = '/images/github.svg' func = {toGitHub}>
-                    GitHub
-                </Button>
-
-                <Button hasIcon = {true} iconSrc = '/images/twitter.svg' func = {toTwitter}>
-                    Twitter
-                </Button>
-
+                <RedirectButton iconSrc = '/images/github.svg' text = 'GitHub' url = 'https://github.com/rh3t'/>
+                <RedirectButton iconSrc = 'images/twitter.svg' text = 'Twitter' url = 'https://x.com/rh3t_'/>
 
             </div>
 
             <div style = {{marginTop: 25, gap: 25}} className = 'flexbox-centered'>
 
-                <Button hasIcon = {true} iconSrc = '/images/monkeytype.svg' func = {toMonkeyType}>
-                    Monkeytype
-                </Button>
-
-                <Button hasIcon = {true} iconSrc = '/images/discord.svg' func = {toDiscord}>
-                    Discord
-                </Button>
+                <RedirectButton iconSrc = '/images/monkeytype.svg' text = 'MonkeyType' url = 'https://monkeytype.com/profile/Rh3t_'/>
+                <RedirectButton iconSrc = '/images/discord.svg' text = 'Discord' url = '/'/>
 
 
             </div>
@@ -47,3 +35,6 @@ export default function Index(){
 
     )
 }
+
+// Export
+export default Index;

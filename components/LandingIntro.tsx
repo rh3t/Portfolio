@@ -3,7 +3,7 @@ import IconTray from './IconTray';
 import './styles/LandingIntro.css';
 
 // Component
-export default function LandingIntro(){
+const LandingIntro = () => {
     return(
 
         <>
@@ -27,3 +27,6 @@ export default function LandingIntro(){
 
     )
 }
+
+// Export
+export default LandingIntro;

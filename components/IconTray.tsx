@@ -8,7 +8,7 @@ interface IconTrayProps {
 }
 
 // Component
-export default function IconTray({imgGap, imgSize}: IconTrayProps){
+const IconTray = ({imgGap, imgSize}: IconTrayProps) => {
     return (
 
         <div id = 'IconTray' className = 'flexbox-centered' style = {{gap: imgGap}}>
@@ -24,3 +24,6 @@ export default function IconTray({imgGap, imgSize}: IconTrayProps){
 
     )
 }
+
+// Export
+export default IconTray;

@@ -1,7 +1,6 @@
 // Import
 import type { Metadata } from 'next';
-import Button from '@/components/Button';
-import { toHomepage } from '@/logic/ButtonLogic';
+import RedirectButton from '@/components/RedirectButton';
 
 // Meta
 export const metadata: Metadata = {
@@ -9,7 +8,7 @@ export const metadata: Metadata = {
 }
 
 // Component
-export default function NotFound(){
+const NotFound = () => {
     return(
 
         <div className = 'default-border fade-in' style = {{padding: '40px'}}>
@@ -21,9 +20,12 @@ export default function NotFound(){
             }}>
                 404
             </p>
-            <Button func = {toHomepage}>Go Home</Button>
+            <RedirectButton text = 'Go Home' iconSrc = '/images/backArrow.svg' url = '/'/>
 
         </div>
 
     )
 }
+
+// Export
+export default NotFound;
