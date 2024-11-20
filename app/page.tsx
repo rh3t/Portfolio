@@ -26,7 +26,7 @@ const Index = () => {
             <div style = {{marginTop: 25, gap: 25}} className = 'flexbox-centered'>
 
                 <RedirectButton iconSrc = '/images/monkeytype.svg' text = 'MonkeyType' url = 'https://monkeytype.com/profile/Rh3t_'/>
-                <RedirectButton iconSrc = '/images/discord.svg' text = 'Discord' url = '/'/>
+                <RedirectButton iconSrc = '/images/discord.svg' text = 'Discord' url = 'https://discord.com/users/996964730252042320'/>
 
 
             </div>
