@@ -11,6 +11,7 @@ const Navbar = () => {
             <NavbarButton page = '/'>Home</NavbarButton>
             <NavbarButton page = '/about'>About</NavbarButton>
             <NavbarButton page = '/projects'>Projects</NavbarButton>
+            <NavbarButton archive = {true} page = '/'>Archive</NavbarButton>
             ~
         </div>
 
@@ -20,13 +21,19 @@ const Navbar = () => {
 // Navbar Button
 interface NavbarButtonProps {
     page: string,
-    children: React.ReactNode
+    children: string,
+    archive?: boolean
 }
 
-const NavbarButton = ({page, children}: NavbarButtonProps) => {
+const NavbarButton = ({page, children, archive}: NavbarButtonProps) => {
 
     const handleClick = () => {
-        location.pathname = page;
+
+        if (archive) {
+            window.open('https://archive.rh3t.dev')
+        } else {
+            location.pathname = page;
+        }
     }
 
     return(
