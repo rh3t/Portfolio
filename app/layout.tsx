@@ -1,21 +1,29 @@
 // Import
-import './globals.css';
+import './global.css';
+import Navbar from '@/components/Navbar';
+import SolarDecal from '@/components/SolarDecal';
+import VersionLabel from '@/components/VersionLabel';
 
 // Component
 const RootLayout = ({children}: {children: React.ReactNode}) => {
-    return (
+    return(
 
-        <html lang = 'en'>
-            <head>
-                <meta name = 'viewport' content = 'width=device-width, initial-scale=1'/>
-            </head>
+        <html className = 'flexbox-centered'>
             <body>
-                {children}
+
+                <div className = 'fade-in-animation'>
+                    {children}
+                </div>
+                
+                <Navbar></Navbar>
+                <VersionLabel></VersionLabel>
+                <SolarDecal size = {2000}></SolarDecal>
+
             </body>
         </html>
 
     )
 }
 
-
-export default RootLayout
+// Export
+export default RootLayout;
