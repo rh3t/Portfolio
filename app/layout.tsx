@@ -18,7 +18,7 @@ const RootLayout = ({children}: {children: React.ReactNode}) => {
             <body>
                 {children}
                 <Version/>
-                {/* <Navigation/> */}
+                <Navigation/>
                 <OrbitDecal size = {2000}/>
             </body>
         </html>

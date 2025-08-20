@@ -16,7 +16,9 @@ html {
     height: 100%;
 
     color: white;
+    user-select: none;
     font-weight: bold;
+    text-align: center;
     background-color: var(--background-darker);
 }
 
@@ -25,12 +27,13 @@ a {
 }
 
 #intro-text {
-    font-size: 30px;
-    padding-left: 20px;
+    font-size: 35px;
+    padding-left: 25px;
 }
 
 #intro-img {
     padding: 12px;
+    image-rendering: pixelated;
     border: 4px dashed var(--primary);
     border-radius: var(--default-radius);
     background-color: var(--primary-darker);
@@ -38,7 +41,7 @@ a {
 
 #intro-text-small {
     opacity: 75%;
-    font-size: 18px;
+    font-size: 21px;
     padding-left: 3px;
     font-style: italic;
 }
@@ -54,10 +57,9 @@ a {
 }
 
 .bordered-container {
-    border: 4px solid white;
     background-color: var(--background);
     border-radius: var(--default-radius);
-    box-shadow: 5px 5px 1px var(--background-darker);
+    box-shadow: var(--background-lightest) 7px 7px;
 }
 
 .priority-text {
@@ -70,7 +72,7 @@ a {
 
 @keyframes slide-in-bottom {
     0% {
-        transform: translateY(50px);
+        transform: translateY(25px);
         opacity: 0;
     }
     100% {

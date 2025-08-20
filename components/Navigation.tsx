@@ -8,9 +8,12 @@ const Navigation = () => {
         <div id = 'Navigation' className = 'flex-center'>
             {'>'}
             <a href = '/'>Home</a>
-            <a href = '/'>About</a>
-            <a href = '/'>Projects</a>
-            <a href = 'https://archive.rh3t.dev'>Archive</a>
+            <a href = '/about'>About</a>
+            
+            {/*
+            <a href = '/projects'>Projects</a>
+            <a href = '/archive'>Archive</a>
+            */}
             {'<'}
         </div>
 

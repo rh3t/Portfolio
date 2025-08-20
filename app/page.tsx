@@ -2,11 +2,11 @@
 import type { Metadata } from 'next';
 import Button from '@/components/Button';
 import StackList from '@/components/StackList';
-import { toDiscord, toGitHub, toEmail, toSteam, toX } from '@/logic/Redirect';
+import { toDiscord, toGitHub, toEmail, toSteam, toTwitch, toMonkey } from '@/logic/Redirect';
 
 // Meta Handler
 export const metadata: Metadata = {
-    title: 'rh3t.dev'
+    title: 'home / rh3t.dev'
 }
 
 // Component
@@ -15,7 +15,7 @@ const Index = () => {
 
         <>
         
-            <div className = 'bordered-container slide-in-bottom' style = {{padding: '60px 70px', flexDirection: 'column'}}>
+            <div className = 'bordered-container slide-in-bottom' style = {{padding: '60px'}}>
                 
                 <div className = 'flex-center'>
                     <img id = 'intro-img' src = '/images/scaled-icon.png' width = {50}/>
@@ -28,17 +28,18 @@ const Index = () => {
                     <StackList padding = {30} size = {30}/>
                 </div>
 
-                <div style = {{paddingTop: '25px', gap: '15px'}} className = 'flex-center'>
-                    <Button src = '/icons/social/discord.svg' width = {75} height = {30} func = {toDiscord}/>
-                    <Button src = '/icons/social/github.svg' width = {75} height = {30} func = {toGitHub}/>
-                    <Button src = '/icons/social/mail.svg' width = {75} height = {30} func = {toEmail}/>
-                    <Button src = '/icons/social/steam.svg' width = {75} height = {30} func = {toSteam}/>
-                    <Button src = '/icons/social/x.svg' width = {75} height = {30} func = {toX}/>
+                <div style = {{paddingTop: '25px', gap: '20px'}} className = 'flex-center'>
+                    <Button src = '/icons/social/discord.svg' width = {70} height = {60} func = {toDiscord}/>
+                    <Button src = '/icons/social/github.svg' width = {70} height = {60} func = {toGitHub}/>
+                    <Button src = '/icons/social/steam.svg' width = {70} height = {60} func = {toSteam}/>
+                    <Button src = '/icons/social/twitch.svg' width = {70} height = {60} func = {toTwitch}/>
+                    <Button src = '/icons/social/monkey.svg' width = {70} height = {60} func = {toMonkey}/>
+                    <Button src = '/icons/social/mail.svg' width = {70} height = {60} func = {toEmail}/>
                 </div>
 
                 <div id = 'intro-desc' style = {{paddingTop: '25px'}} className = 'flex-center'>
-                    <div style = {{width: '650px'}}>
-                        Nice to meet you! I'm a 18 y/o software developer located in the southern region of Michigan. I mainly work on frontend web design and management, but take a look around and see for yourself!
+                    <div style = {{width: '600px'}}>
+                        Nice to meet you! I’m a U.S. based software developer with 7+ years of experience in web development, e-commerce, and social media marketing, specializing in modern tools like React, Next.js, Node, and Supabase.
                     </div>
                 </div>
 
